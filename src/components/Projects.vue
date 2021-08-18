@@ -17,22 +17,14 @@
                     </div>
                 </div>
                 
-                <div v-html="project.description" class="description mb-4"></div>
-                <div :id="'carousel'+index" class="carousel slide" data-ride="carousel">
+                <div v-html="project.description" class="description mb-4 mt-3 text-justify"></div>
+                <div class="carousel-container">
                     <p class="status" :class="project.status == 'Deployed' ? 'green' : 'orange'" v-text="project.status"></p>
-                    <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item" v-for="(image, index) in project.images" :class="index == 0 ? 'active' : '' ">
-                            <img :src="require(`@/assets/${image}`)" class="w-100">
+                    <VueSlickCarousel :arrows="true" :dots="true">
+                        <div class="embed-responsive embed-responsive-16by9" v-for="(image, index) in project.images" :key="index" :class="index == 0 ? 'active' : '' ">
+                            <img class="embed-responsive-item" :src="require(`@/assets/${image}`)" loading="lazy">
                         </div>
-                    </div>
-                    <a class="carousel-control-prev" :href="'#carousel'+index" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" :href="'#carousel'+index" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+                    </VueSlickCarousel>
                 </div>
             </div>
         </div>
@@ -41,7 +33,14 @@
 </template>
 
 <script>
+import VueSlickCarousel from 'vue-slick-carousel';
+import 'vue-slick-carousel/dist/vue-slick-carousel.css'
+// optional style for arrows & dots
+import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
+
 export default {
+    name: 'Projects',
+    components: {VueSlickCarousel},
     data: function() {
         return {
             projects: 
@@ -50,49 +49,55 @@ export default {
                     id: 1,
                     title: 'Early Theory',
                     link: 'https://earlytheory.com',
+                    description: 'Early Theory is an online service company that provides tarot services and also selling some of their stuff. This website has been developed in e-commerce type for tarot services. It took one month to finish this project, and I’m doing this project with one partner. My role for this project is as a front-end developer and also as UI/UX designer. For the back-end, we used Laravel. And for the javascript, we used jQuery.',
                     status: 'Deployed',
                     tech: ['Laravel', 'jQuery'],
-                    images: ['et1.jpg', 'et2.png', 'et3.png']
+                    images: ['et1.jpg', 'et2.jpg', 'et3.jpg']
                 },
                 {
                     id: 2,
                     title: 'So-Klin',
                     link: '#',
+                    description: 'So Klin is a fragrance product for floors and clothes. This website has been developed for company profiles and catalog products from the company. But there are no transactions or selling on the website. It linked to another website which is e-commerces. I\'m doing this project by myself within two months. Furthermore, my role for this project is a full-stack developer. This website used WordPress for the back-end and used jQuery for javascript.',
                     status: 'On Development',
                     tech: ['Wordpress', 'jQuery'],
-                    images: ['sk1.jpg', 'sk2.png', 'sk3.png']
+                    images: ['sk1.jpg', 'sk2.jpg', 'sk3.jpg']
                 },
                 {
                     id: 3,
                     title: 'Burn Support Group',
                     link: 'http://burnsupport.id',
+                    description: 'Burn Support Group is a community forum for burn survivors through education and training aimed at conducting social empowerment for burn survivors. This website has been developed for company profiles and campaigns from the company. There is a register page for candidates. I\'m doing this project by myself within one month. Hence, my role for this project is a full-stack developer. This website used Laravel for the back-end and used jQuery for javascript. ',
                     status: 'Deployed',
                     tech: ['Laravel', 'jQuery'],
-                    images: ['bs1.png', 'bs2.png', 'bs3.png']
+                    images: ['bs1.jpg', 'bs2.jpg', 'bs3.jpg']
                 },
                 {
                     id: 4,
                     title: 'Senimart',
+                    description: 'Senimart is an alternative platform for art connoisseurs to find and buy works of art without having to come to an art gallery. Senimart is also intended as a forum for artists to interact with other new artists and open opportunities for collaboration between artists or their works with various artistic or non-art activations in an effort to introduce and develop the potential of artists and their works. This website has been developed in e-commerce type for selling any artworks. It needed four months to finish this project, and I’m doing this project with one partner. My role for this project is as a front-end developer and also as UI/UX designer. For the back-end, we used Laravel. And for the javascript, we used jQuery.',
                     link: 'https://senimart.id',
                     status: 'Deployed',
                     tech: ['Laravel', 'jQuery'],
-                    images: ['sm1.png', 'sm2.png', 'sm3.png']
+                    images: ['sm1.jpg', 'sm2.jpg', 'sm3.jpg', 'sm4.jpg']
                 },
                 {
                     id: 5,
                     title: 'Asia Stem Cell Center',
+                    description: 'Asia Stem Cell Center is a stem cell laboratory that has an operational license certificate from the Ministry of Health where the processing and processing of stem cells are carried out with GMP standards. This website has been developed for company profiles. I\'m doing this project by myself within two months. Moreover, my role for this project is a full-stack developer. This website used WordPress for the back-end.',
                     link: 'https://asiastemcellcenter.com',
                     status: 'Deployed',
                     tech: ['Wordpress'],
-                    images: ['asc1.jpg', 'asc2.png', 'asc3.png']
+                    images: ['asc1.jpg', 'asc2.jpg', 'asc3.jpg']
                 },
                 {
                     id: 5,
                     title: 'Hardwarenesia',
-                    link: 'https://asiastemcellcenter.com',
+                    description: 'HardwareNesia is a news portal about information technology that contains articles related to hardware and software. This website has been developed for self-project and this website is under maintenance lately because I want to make a new look for this website so it can be fresh again. I\'m doing this project by myself and am still in progress. Moreover, my role for this project is a full-stack developer. This website used Laravel for the back-end and used Vue for javascript.',
+                    link: '',
                     status: 'On Development',
                     tech: ['Vue'],
-                    images: ['hw1.png', 'hw2.jpg']
+                    images: ['hw1.jpg', 'hw2.jpg']
                 },
             ]
         }
@@ -112,7 +117,7 @@ export default {
 
 .project {
     margin: auto;
-    margin-bottom: 5rem;
+    margin-bottom: 7rem;
     width: 70%;
     position: relative;
 }
@@ -128,7 +133,7 @@ export default {
     content: '';
     background-color: #dddddd;
     position: absolute;
-    bottom: -2.5rem;
+    bottom: -4rem;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -136,23 +141,6 @@ export default {
 a:hover {
     text-decoration: none;
 }
-
-.carousel {
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    border-radius: .5rem;
-    margin: auto;
-}
-
-.carousel-item {
-    height: 56.25%;
-}
-
-.carousel-item img {
-    object-fit: cover;
-    border-radius: .5rem;
-    object-position: top;
-}
-
 
 .info {
     align-items: center;
@@ -193,11 +181,11 @@ a:hover {
     height: 34px;
     display: flex;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 .logo img {
-    height: 25px;
+    height: 20px;
     width: auto;
     padding-right: .5rem;
 }
@@ -237,10 +225,6 @@ a:hover {
 
     .logo img {
         height: 18px;
-    }
-
-    .carousel-item img {
-        object-fit: contain;
     }
 
     .satu {
@@ -286,5 +270,27 @@ p {
     background: #ECAD4E;
 }
 
+.carousel-container {
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: 3px 3px 4px 4px rgba(0,0,0, 0.1);
+}
 
+.carousel-container img {
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.slick-next {
+    right: 20px;
+}
+
+.slick-prev {
+    left: 20px;
+    z-index: 20;
+}
+
+.slick-dots {
+    bottom: -35px;
+}
 </style>

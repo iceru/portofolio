@@ -46,6 +46,10 @@ export default {
 
 }
 
+a:hover {
+    text-decoration: none !important;
+}
+
 .container {
     background-color: white;
     padding: 2rem 0
@@ -62,7 +66,6 @@ body {
 
 .navigations a {
     color: #384857;
-    text-decoration: none;
     transition: all .2s ease-in;
     font-weight: 600;
     font-size: 1.1rem;
