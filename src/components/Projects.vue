@@ -105,7 +105,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
 .col-md-6:nth-child(odd) {
     padding-right: 3rem;
@@ -118,7 +118,7 @@ export default {
 .project {
     margin: auto;
     margin-bottom: 7rem;
-    width: 70%;
+    width: 80%;
     position: relative;
 }
 

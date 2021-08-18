@@ -36,9 +36,6 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
-.background {
-    background-color: #AFEADC;
-}
 #app {
     font-family: 'Cairo', sans-serif;
     width: 100vw;
