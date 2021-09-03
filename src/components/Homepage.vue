@@ -12,8 +12,8 @@
 
                 <div class="button-cta d-flex flex-wrap pt-3">
                     <!-- <a href="https://drive.google.com/file/d/1e1eX3JVZlVVU9bLIryOGGGblVqR3Wa4_/view?usp=sharing" class="button-purple mr-2" download="CV Muhamad Hafiz">Download My CV</a> -->
-                    <router-link to="/projects" class="button-purple mr-4">Projects</router-link>
-                    <router-link to="/contact" class="button-purple">Contact</router-link>
+                    <router-link to="/projects" class="button-purple mr-4 mb-3">Projects</router-link>
+                    <router-link to="/contact" class="button-purple mb-3">Contact</router-link>
                 </div>
             </div>
         </div>
@@ -114,6 +114,7 @@ export default {
 
 .button-purple:hover {
     background: #54d3b5;
+    color: white;
     text-decoration: none;
     border-radius: .5rem;
     transition: .2s ease-in;

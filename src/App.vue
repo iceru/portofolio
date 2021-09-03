@@ -1,6 +1,6 @@
 <template>
 <div id="app">
-    <div class="background">
+    <div>
         <div class="container">
             <nav class="d-flex justify-content-center">
             <div class="navigations py-3">

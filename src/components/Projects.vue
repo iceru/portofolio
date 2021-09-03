@@ -57,9 +57,9 @@ export default {
                 {
                     id: 2,
                     title: 'So-Klin',
-                    link: '#',
+                    link: 'https://soklinlantai.com/',
                     description: 'So Klin is a fragrance product for floors and clothes. This website has been developed for company profiles and catalog products from the company. But there are no transactions or selling on the website. It linked to another website which is e-commerces. I\'m doing this project by myself within two months. Furthermore, my role for this project is a full-stack developer. This website used WordPress for the back-end and used jQuery for javascript.',
-                    status: 'On Development',
+                    status: 'Deployed',
                     tech: ['Wordpress', 'jQuery'],
                     images: ['sk1.jpg', 'sk2.jpg', 'sk3.jpg']
                 },
