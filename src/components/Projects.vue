@@ -107,190 +107,193 @@ export default {
 
 <style scoped>
 
-.col-md-6:nth-child(odd) {
-    padding-right: 3rem;
-}
+    .col-md-6:nth-child(odd) {
+        padding-right: 3rem;
+    }
 
-.col-md-6:nth-child(even) {
-    padding-left: 3rem;
-}
-
-.project {
-    margin: auto;
-    margin-bottom: 7rem;
-    width: 80%;
-    position: relative;
-}
-
-.project a:hover {
-    color: #52a793;
-    transition: .2s ease-in;
-}
-
-.project:after {
-    width: 60%;
-    height: 1px;
-    content: '';
-    background-color: #dddddd;
-    position: absolute;
-    bottom: -4rem;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-.info {
-    align-items: center;
-    margin-bottom: .5rem;
-    display: flex;
-}
-
-.info h3 {
-    font-weight: 700;
-    margin: 0;
-}
-
-.satu {
-    border-right: 2px solid #041E42;
-    padding-right: 30px;
-    margin-left: 0;
-}
-
-.title {
-    align-items: center;
-}
-
-.title a {
-    color: #384857;
-    transition: all .2s ease-in;
-}
-
-.title a:hover {
-    color: #52a793;
-    transition: all .2s ease-in;
-}
-
-.logo {
-    padding: 5px 10px;
-    font-weight: bold;
-    margin-left: 1rem;
-    padding-right: 0;
-    height: 34px;
-    display: flex;
-    align-items: center;
-    font-size: 1.25rem;
-}
-
-.logo img {
-    height: 20px;
-    width: auto;
-    padding-right: .5rem;
-}
-
-@media only screen and (max-width: 600px) {
-    .line {
-        flex-direction: column;
+    .col-md-6:nth-child(even) {
+        padding-left: 3rem;
     }
 
     .project {
-        width: 95%;
-        margin-bottom: 4rem;
+        margin: auto;
+        margin-bottom: 7rem;
+        width: 80%;
+        position: relative;
     }
-    
+
+    .project a:hover {
+        color: #52a793;
+        transition: .2s ease-in;
+    }
+
     .project:after {
-        bottom: -2rem;
+        width: 60%;
+        height: 1px;
+        content: '';
+        background-color: #dddddd;
+        position: absolute;
+        bottom: -4rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    a:hover {
+        text-decoration: none;
     }
 
     .info {
-        align-items: flex-start;
-        display: block;
-        margin-bottom: 1.5rem;
-    }
-
-    .title {
-        flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         margin-bottom: .5rem;
+        display: flex;
     }
 
-    .logo {
-        margin-left: 0;
-        margin: 5px 0;
-        height: 24px;
-        font-size: 1.15rem;
-    }
-
-    .logo img {
-        height: 18px;
+    .info h3 {
+        font-weight: 700;
+        margin: 0;
     }
 
     .satu {
-        width: 100%;
-        border-right: none;
-    }
-
-    .dua {
-        width: 100%;
+        border-right: 2px solid #041E42;
+        padding-right: 30px;
         margin-left: 0;
     }
 
-}
+    .title {
+        align-items: center;
+    }
 
-.wordpress {
-    color: #4783AF;
-}
+    .title a {
+        color: #384857;
+        transition: all .2s ease-in;
+    }
 
-p {
-    margin-bottom: 0;
-}
-.laravel {
-    color: #FF2D20;
-}
+    .title a:hover {
+        color: #52a793;
+        transition: all .2s ease-in;
+    }
 
-.status {
-    border-radius: 30px;
-    padding: 5px 10px;
-    color: white;
-    font-size: .85rem;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    z-index: 15;
-    opacity: .9;
-}
+    .logo {
+        padding: 5px 10px;
+        font-weight: bold;
+        margin-left: 1rem;
+        padding-right: 0;
+        height: 34px;
+        display: flex;
+        align-items: center;
+        font-size: 1.25rem;
+    }
 
-.green {
-    background: #4CC62E;
-}
+    .logo img {
+        height: 20px;
+        width: auto;
+        padding-right: .5rem;
+    }
 
-.orange {
-    background: #ECAD4E;
-}
+    @media only screen and (max-width: 600px) {
+        .line {
+            flex-direction: column;
+        }
 
-.carousel-container {
-    position: relative;
-    border-radius: 1rem;
-    box-shadow: 3px 3px 4px 4px rgba(0,0,0, 0.1);
-}
+        .project {
+            width: 95%;
+            margin-bottom: 4rem;
+        }
+        
+        .project:after {
+            bottom: -2rem;
+        }
 
-.carousel-container img {
-    object-fit: cover;
-    border-radius: 1rem;
-}
+        .info {
+            align-items: flex-start;
+            display: block;
+            margin-bottom: 1.5rem;
+        }
 
-.slick-next {
-    right: 20px;
-}
+        .title {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: .5rem;
+        }
 
-.slick-prev {
-    left: 20px;
-    z-index: 20;
-}
+        .logo {
+            margin-left: 0;
+            margin: 5px 0;
+            height: 24px;
+            font-size: 1.15rem;
+        }
 
-.slick-dots {
-    bottom: -35px;
-}
+        .logo img {
+            height: 18px;
+        }
+
+        .satu {
+            width: 100%;
+            border-right: none;
+        }
+
+        .dua {
+            width: 100%;
+            margin-left: 0;
+        }
+    }
+
+    .wordpress {
+        color: #4783AF;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+    .laravel {
+        color: #FF2D20;
+    }
+
+    .slick-next:before, .slick-prev:before {
+        color: #52a793 !important;
+    }
+
+    .status {
+        border-radius: 30px;
+        padding: 5px 10px;
+        color: white;
+        font-size: .85rem;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 15;
+        opacity: .9;
+    }
+
+    .green {
+        background: #4CC62E;
+    }
+
+    .orange {
+        background: #ECAD4E;
+    }
+
+    .carousel-container {
+        position: relative;
+        border-radius: 1rem;
+        box-shadow: 3px 3px 4px 4px rgba(0,0,0, 0.1);
+    }
+
+    .carousel-container img {
+        object-fit: cover;
+        border-radius: 1rem;
+    }
+
+    .slick-next {
+        right: 20px;
+    }
+
+    .slick-prev {
+        left: 20px;
+        z-index: 20;
+    }
+
+    .slick-dots {
+        bottom: -35px;
+    }
 </style>

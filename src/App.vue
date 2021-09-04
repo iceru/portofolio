@@ -68,6 +68,10 @@ body {
     font-size: 1.1rem;
 }
 
+.slick-next:before, .slick-prev:before {
+    color: #52a793 !important;
+}
+
 .navigations a:hover {
     color: #52a793;
     transition: all .2s ease-in;
