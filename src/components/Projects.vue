@@ -1,7 +1,7 @@
 <template>
 <div class="container">
     <div class="row">
-        <div class="col-12" v-for="(project, index) in projects" :key="project.id">
+        <div class="col-12" v-for="(project) in projects" :key="project.id">
             <div class="project">
                 <div class="info justify-content-between">
                     <div class="title text-center">
@@ -47,6 +47,15 @@ export default {
             [
                 {
                     id: 1,
+                    title: 'UKM JuWAra',
+                    link: 'https://ukmjuwara.id',
+                    description: "UKM JuWAra is a catalog for small businesses in Indonesia organised by ukmindonesia.id. The website is a digital catalog that used to add more exposure to all small businessess selected by UKM JuWAra, and it's running with Laravel Framework and jQuery. It took one and half month to finish this project and my role in this project is as a Full-Stack Developer.",
+                    status: 'Deployed',
+                    tech: ['Laravel', 'jQuery'],
+                    images: ['uj-1.jpg', 'uj-2.jpg', 'uj-3.jpg']
+                },
+                {
+                    id: 2,
                     title: 'Early Theory',
                     link: 'https://earlytheory.com',
                     description: 'Early Theory is an online service company that provides tarot services and also selling some of their stuff. This website has been developed in e-commerce type for tarot services. It took one month to finish this project, and I’m doing this project with one partner. My role for this project is as a front-end developer and also as UI/UX designer. For the back-end, we used Laravel. And for the javascript, we used jQuery.',
@@ -55,7 +64,7 @@ export default {
                     images: ['et1.jpg', 'et2.jpg', 'et3.jpg']
                 },
                 {
-                    id: 2,
+                    id: 3,
                     title: 'So-Klin',
                     link: 'https://soklinlantai.com/',
                     description: 'So Klin is a fragrance product for floors and clothes. This website has been developed for company profiles and catalog products from the company. But there are no transactions or selling on the website. It linked to another website which is e-commerces. I\'m doing this project by myself within two months. Furthermore, my role for this project is a full-stack developer. This website used WordPress for the back-end and used jQuery for javascript.',
@@ -64,7 +73,7 @@ export default {
                     images: ['sk1.jpg', 'sk2.jpg', 'sk3.jpg']
                 },
                 {
-                    id: 3,
+                    id: 4,
                     title: 'Burn Support Group',
                     link: 'http://burnsupport.id',
                     description: 'Burn Support Group is a community forum for burn survivors through education and training aimed at conducting social empowerment for burn survivors. This website has been developed for company profiles and campaigns from the company. There is a register page for candidates. I\'m doing this project by myself within one month. Hence, my role for this project is a full-stack developer. This website used Laravel for the back-end and used jQuery for javascript. ',
@@ -73,7 +82,7 @@ export default {
                     images: ['bs1.jpg', 'bs2.jpg', 'bs3.jpg']
                 },
                 {
-                    id: 4,
+                    id: 5,
                     title: 'Senimart',
                     description: 'Senimart is an alternative platform for art connoisseurs to find and buy works of art without having to come to an art gallery. Senimart is also intended as a forum for artists to interact with other new artists and open opportunities for collaboration between artists or their works with various artistic or non-art activations in an effort to introduce and develop the potential of artists and their works. This website has been developed in e-commerce type for selling any artworks. It needed four months to finish this project, and I’m doing this project with one partner. My role for this project is as a front-end developer and also as UI/UX designer. For the back-end, we used Laravel. And for the javascript, we used jQuery.',
                     link: 'https://senimart.id',
@@ -82,7 +91,7 @@ export default {
                     images: ['sm1.jpg', 'sm2.jpg', 'sm3.jpg', 'sm4.jpg']
                 },
                 {
-                    id: 5,
+                    id: 6,
                     title: 'Asia Stem Cell Center',
                     description: 'Asia Stem Cell Center is a stem cell laboratory that has an operational license certificate from the Ministry of Health where the processing and processing of stem cells are carried out with GMP standards. This website has been developed for company profiles. I\'m doing this project by myself within two months. Moreover, my role for this project is a full-stack developer. This website used WordPress for the back-end.',
                     link: 'https://asiastemcellcenter.com',
@@ -91,7 +100,7 @@ export default {
                     images: ['asc1.jpg', 'asc2.jpg', 'asc3.jpg']
                 },
                 // {
-                //     id: 5,
+                //     id: 7,
                 //     title: 'Hardwarenesia',
                 //     description: 'HardwareNesia is a news portal about information technology that contains articles related to hardware and software. This website has been developed for self-project and this website is under maintenance lately because I want to make a new look for this website so it can be fresh again. I\'m doing this project by myself and am still in progress. Moreover, my role for this project is a full-stack developer. This website used Laravel for the back-end and used Vue for javascript.',
                 //     link: '',
