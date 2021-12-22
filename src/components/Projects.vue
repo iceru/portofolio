@@ -90,15 +90,15 @@ export default {
                     tech: ['Wordpress'],
                     images: ['asc1.jpg', 'asc2.jpg', 'asc3.jpg']
                 },
-                {
-                    id: 5,
-                    title: 'Hardwarenesia',
-                    description: 'HardwareNesia is a news portal about information technology that contains articles related to hardware and software. This website has been developed for self-project and this website is under maintenance lately because I want to make a new look for this website so it can be fresh again. I\'m doing this project by myself and am still in progress. Moreover, my role for this project is a full-stack developer. This website used Laravel for the back-end and used Vue for javascript.',
-                    link: '',
-                    status: 'On Development',
-                    tech: ['Vue'],
-                    images: ['hw1.jpg', 'hw2.jpg']
-                },
+                // {
+                //     id: 5,
+                //     title: 'Hardwarenesia',
+                //     description: 'HardwareNesia is a news portal about information technology that contains articles related to hardware and software. This website has been developed for self-project and this website is under maintenance lately because I want to make a new look for this website so it can be fresh again. I\'m doing this project by myself and am still in progress. Moreover, my role for this project is a full-stack developer. This website used Laravel for the back-end and used Vue for javascript.',
+                //     link: '',
+                //     status: 'On Development',
+                //     tech: ['Vue'],
+                //     images: ['hw1.jpg', 'hw2.jpg']
+                // },
             ]
         }
     },

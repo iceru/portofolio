@@ -4,9 +4,9 @@
         <div class="container">
             <nav class="d-flex justify-content-center">
             <div class="navigations py-3">
-                <router-link to="/projects" active-class="active" class="px-4 px-lg-5">Projects</router-link>
+                <!-- <router-link to="/projects" active-class="active" class="px-4 px-lg-5">Projects</router-link> -->
                 <router-link to="/" active-class="active" class="animation px-3"> <img src="@/assets/logo.png" alt=""></router-link>
-                <router-link to="/contact" active-class="active" class="px-4 px-lg-5">Contact</router-link>
+                <!-- <router-link to="/contact" active-class="active" class="px-4 px-lg-5">Contact</router-link> -->
             </div>
             </nav>
             <transition name="fade" mode="out-in">
