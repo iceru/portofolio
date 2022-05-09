@@ -7,7 +7,7 @@
         <div class="col-12 col-md-8">
             <div class="cta-text">
                 <h1>Hello, My Name is <span class="purple">Hafiz!</span></h1>
-                <h4 class="pt-2">I’m a <span class="purple">UI/UX Designer</span> and <span class="purple">Web Developer</span> from Indonesia.</h4>
+                <h4 class="pt-2">I’m a <span class="purple">Web Developer</span> from Indonesia.</h4>
                 <!-- <h5 class="pt-2">I’m seeking for a new opportunity right now.</h5> -->
 
                 <div class="button-cta d-flex flex-wrap pt-3">

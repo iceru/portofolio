@@ -1,7 +1,7 @@
 <template>
 <div class="container">
     <div class="row">
-        <div class="col-12" v-for="(project, index) in projects" :key="project.id">
+        <div class="col-12" v-for="(project) in projects" :key="project.id">
             <div class="project">
                 <div class="info justify-content-between">
                     <div class="title text-center">
@@ -47,6 +47,33 @@ export default {
             [
                 {
                     id: 1,
+                    title: 'Ako Mag Booking Page',
+                    link: 'https://book.ako-mag.jp',
+                    description: "",
+                    status: 'Deployed',
+                    tech: ['React'],
+                    images: ['uj-1.jpg', 'uj-2.jpg', 'uj-3.jpg']
+                },
+                {
+                    id: 1,
+                    title: 'UKM JuWAra',
+                    link: 'https://ukmjuwara.id',
+                    description: "UKM JuWAra is a catalog for small businesses in Indonesia organised by ukmindonesia.id. The website is a digital catalog that used to add more exposure to all small businessess selected by UKM JuWAra, and it's running with Laravel Framework and jQuery.",
+                    status: 'Deployed',
+                    tech: ['Laravel', 'jQuery'],
+                    images: ['uj-1.jpg', 'uj-2.jpg', 'uj-3.jpg']
+                },
+                {
+                    id: 1,
+                    title: 'UKM JuWAra',
+                    link: 'https://ukmjuwara.id',
+                    description: "UKM JuWAra is a catalog for small businesses in Indonesia organised by ukmindonesia.id. The website is a digital catalog that used to add more exposure to all small businessess selected by UKM JuWAra, and it's running with Laravel Framework and jQuery.",
+                    status: 'Deployed',
+                    tech: ['Laravel', 'jQuery'],
+                    images: ['uj-1.jpg', 'uj-2.jpg', 'uj-3.jpg']
+                },
+                {
+                    id: 2,
                     title: 'Early Theory',
                     link: 'https://earlytheory.com',
                     description: 'Early Theory is an online service company that provides tarot services and also selling some of their stuff. This website has been developed in e-commerce type for tarot services. It took one month to finish this project, and I’m doing this project with one partner. My role for this project is as a front-end developer and also as UI/UX designer. For the back-end, we used Laravel. And for the javascript, we used jQuery.',
@@ -89,15 +116,6 @@ export default {
                     status: 'Deployed',
                     tech: ['Wordpress'],
                     images: ['asc1.jpg', 'asc2.jpg', 'asc3.jpg']
-                },
-                {
-                    id: 5,
-                    title: 'Hardwarenesia',
-                    description: 'HardwareNesia is a news portal about information technology that contains articles related to hardware and software. This website has been developed for self-project and this website is under maintenance lately because I want to make a new look for this website so it can be fresh again. I\'m doing this project by myself and am still in progress. Moreover, my role for this project is a full-stack developer. This website used Laravel for the back-end and used Vue for javascript.',
-                    link: '',
-                    status: 'On Development',
-                    tech: ['Vue'],
-                    images: ['hw1.jpg', 'hw2.jpg']
                 },
             ]
         }

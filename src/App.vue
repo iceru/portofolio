@@ -20,7 +20,7 @@
 
                 </div>
                 <div class="copyright">
-                    Copyright <i class="fas fa-copyright"></i> - Hafiz 2021
+                    Copyright <i class="fas fa-copyright"></i> - Hafiz {{ new Date().getFullYear() }}
                 </div>
             </footer>
         </div>
