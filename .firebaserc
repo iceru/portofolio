@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "m-hafiz"
-  }
+    "default": "m-hafiz",
+    "production": "m-hafiz"
+  },
+  "targets": {}
 }
