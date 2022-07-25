@@ -1,12 +1,12 @@
 <template>
   <div class="container">
     <div class="row">
-      <div class="col-12" v-for="project in projects" :key="project.id">
+      <div class="col-12" v-for="(project, index) in projects" :key="project">
         <div class="project">
           <div class="info justify-content-between">
             <div class="title text-center">
               <a :href="project.link" target="_blank">
-                <h3 v-text="project.title"></h3>
+                <h3>{{ index + 1 }}. {{ project.title }}</h3>
               </a>
             </div>
             <div class="d-flex justify-content-center">
@@ -79,52 +79,60 @@ export default {
     return {
       projects: [
         {
-          id: 8,
+          title: "Travel, Point of Interests and Experiences (V3 Leisure)",
+          link: "https://harmonious-taiyaki-4467fa.netlify.app/",
+          description:
+            "This is an ongoing project to make a user interface for booking accommodation, activities, restaurants, and products. Also, an interactive map combined with a guide on Points of Interest and Experiences. The website is based on Vue.js and integrated with V3 Leisure OBX (Open Booking Exchange) Service",
+          status: "Ongoing",
+          tech: ["Vue"],
+          images: ["poi-1.png"]
+        },
+        {
           title: "Visit Nara Booking Page",
           link: "https://book.visitnara.jp/",
-          description: "",
+          description:
+            "Visit Nara Booking Page is a project of making the user interface for booking accommodation, activities, restaurants, and products of Visit Nara website. The website is based on React.js and integrated with V3 Leisure OBX (Open Booking Exchange) Service",
           status: "Deployed",
           tech: ["React"],
           images: ["nara-1.png", "nara-2.png", "nara-3.png"]
         },
         {
-          id: 8,
           title: "Ako Mag Booking Page",
           link: "https://book.ako-mag.jp",
-          description: "",
+          description:
+            "Ako Mag Booking Page is a project of making the user interface for booking accommodation, activities, restaurants, and products of Ako Mag. The website is based on React.js and integrated with V3 Leisure OBX (Open Booking Exchange) Service.",
           status: "Deployed",
           tech: ["React"],
           images: ["ako-1.png", "ako-2.png", "ako-3.png"]
         },
         {
-          id: 7,
           title: "Panda of Borderlands",
           link: "https://pandaofborderlands.com/",
-          description: "",
+          description:
+            "Panda of Borderlands is a NFT website to introduce the NFT Project. The website is built using React.js",
           status: "Deployed",
           tech: ["React"],
           images: ["pob-1.png", "pob-2.png", "pob-3.png"]
         },
         {
-          id: 6,
           title: "Guernica Club",
           link: "https://guernicaclub.com/",
-          description: "",
+          description:
+            "A Project of Slicing Design to HTML, CSS and Javascript",
           status: "Deployed",
           tech: ["HTML", "CSS"],
           images: ["guernica-1.png", "guernica-2.png", "guernica-3.png"]
         },
         {
-          id: 6,
           title: "ST Man Hardware",
           link: "http://stmanhardware.com/",
-          description: "",
+          description:
+            "A Project of Slicing Design to HTML, CSS and Javascript",
           status: "Deployed",
           tech: ["HTML", "CSS"],
           images: ["stman-1.png", "stman-2.png", "stman-3.png"]
         },
         {
-          id: 1,
           title: "UKM JuWAra",
           link: "https://ukmjuwara.id",
           description:
@@ -134,7 +142,6 @@ export default {
           images: ["uj-1.jpg", "uj-2.jpg", "uj-3.jpg"]
         },
         {
-          id: 2,
           title: "Early Theory",
           link: "https://earlytheory.com",
           description:
@@ -144,7 +151,6 @@ export default {
           images: ["et1.jpg", "et2.jpg", "et3.jpg"]
         },
         {
-          id: 2,
           title: "So-Klin",
           link: "https://soklinlantai.com/",
           description:
@@ -154,7 +160,6 @@ export default {
           images: ["sk1.jpg", "sk2.jpg", "sk3.jpg"]
         },
         {
-          id: 3,
           title: "Burn Support Group",
           link: "http://burnsupport.id",
           description:
@@ -164,7 +169,6 @@ export default {
           images: ["bs1.jpg", "bs2.jpg", "bs3.jpg"]
         },
         {
-          id: 4,
           title: "Senimart",
           description:
             "Senimart is an alternative platform for art connoisseurs to find and buy works of art without having to come to an art gallery. Senimart is also intended as a forum for artists to interact with other new artists and open opportunities for collaboration between artists or their works with various artistic or non-art activations in an effort to introduce and develop the potential of artists and their works. This website has been developed in e-commerce type for selling any artworks. It needed four months to finish this project, and I’m doing this project with one partner. My role for this project is as a front-end developer and also as UI/UX designer. For the back-end, we used Laravel. And for the javascript, we used jQuery.",
@@ -174,7 +178,6 @@ export default {
           images: ["sm1.jpg", "sm2.jpg", "sm3.jpg", "sm4.jpg"]
         },
         {
-          id: 5,
           title: "Asia Stem Cell Center",
           description:
             "Asia Stem Cell Center is a stem cell laboratory that has an operational license certificate from the Ministry of Health where the processing and processing of stem cells are carried out with GMP standards. This website has been developed for company profiles. I'm doing this project by myself within two months. Moreover, my role for this project is a full-stack developer. This website used WordPress for the back-end.",
