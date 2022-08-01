@@ -79,6 +79,20 @@ export default {
     return {
       projects: [
         {
+          title: "Kolektibles",
+          link: "https://joyful-cassata-0d33a0.netlify.app/",
+          description:
+            "Kolektibles is a project of slicing design to HTML, CSS and Javascript.",
+          status: "Ongoing",
+          tech: ["HTML", "CSS", "jQuery"],
+          images: [
+            "kolektibles-1.png",
+            "kolektibles-2.png",
+            "kolektibles-3.png",
+            "kolektibles-4.png"
+          ]
+        },
+        {
           title: "Travel, Point of Interests and Experiences (V3 Leisure)",
           link: "https://harmonious-taiyaki-4467fa.netlify.app/",
           description:
@@ -104,6 +118,15 @@ export default {
           status: "Deployed",
           tech: ["React"],
           images: ["ako-1.png", "ako-2.png", "ako-3.png"]
+        },
+        {
+          title: "FORMS Living",
+          link: "https://clever-zuccutto-493a9a.netlify.app/",
+          description:
+            "FORMS Living is a project of slicing design to HTML, CSS and Javascript.",
+          status: "Ongoing",
+          tech: ["HTML", "CSS", "jQuery"],
+          images: ["forms-1.png", "forms-2.png", "forms-3.png"]
         },
         {
           title: "Panda of Borderlands",
@@ -291,11 +314,15 @@ a:hover {
 
   .project {
     width: 95%;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
   }
 
   .project:after {
-    bottom: -2rem;
+    bottom: -3.5rem;
+  }
+
+  .project h3 {
+    font-size: 1.5rem;
   }
 
   .info {
