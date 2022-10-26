@@ -79,54 +79,108 @@ export default {
     return {
       projects: [
         {
-          title: "Kolektibles",
-          link: "https://joyful-cassata-0d33a0.netlify.app/",
+          title: "Newville",
+          link: "https://newville.id/",
           description:
-            "Kolektibles is a project of slicing design to HTML, CSS and Javascript.",
-          status: "Ongoing",
-          tech: ["HTML", "CSS", "jQuery"],
-          images: [
-            "kolektibles-1.png",
-            "kolektibles-2.png",
-            "kolektibles-3.png",
-            "kolektibles-4.png"
-          ]
+            "Newville is a website for a commercial properties owned by Lippo Cikarang. This website is based on Wordpress and using custom theme integrated with Bootstrap and jQuery.",
+          status: "Deployed",
+          tech: ["Wordpress", "jQuery"],
+          images: ["newville-1.png", "newville-2.png", "newville-3.png"]
         },
         {
+          title: "Fukui Booking Page",
+          link: "https://www.fuku-e.com/experience/txj/index.html?type=1",
+          description:
+            "Fukui Booking Page is a project of making the user interface for booking accommodation, activities, restaurants, and products of Fukui website. The website is based on React.js and integrated with V3 Leisure OBX (Open Booking Exchange) Service",
+          status: "Deployed",
+          tech: ["React"],
+          images: ["fukui-1.png", "fukui-2.png", "fukui-3.png"]
+        },
+        {
+          title: "Local Prime Booking Page",
+          link: "https://localprime.reforsindo.com/",
+          description:
+            "Local Prime Booking Page is a project of making the user interface for booking accommodation, activities, restaurants, and products of Local Prime website. The website is based on React.js and integrated with V3 Leisure OBX (Open Booking Exchange) Service",
+          status: "Deployed",
+          tech: ["React"],
+          images: ["localprime-1.png", "localprime-2.png", "localprime-3.png"]
+        },
+        // {
+        //   title: "Kolektibles",
+        //   link: "https://joyful-cassata-0d33a0.netlify.app/",
+        //   description:
+        //     "Kolektibles is a project of slicing design to HTML, CSS and Javascript.",
+        //   status: "Ongoing",
+        //   tech: ["HTML", "CSS", "jQuery"],
+        //   images: [
+        //     "kolektibles-1.png",
+        //     "kolektibles-2.png",
+        //     "kolektibles-3.png",
+        //     "kolektibles-4.png"
+        //   ]
+        // },
+        {
           title: "Travel, Point of Interests and Experiences (V3 Leisure)",
-          link: "https://harmonious-taiyaki-4467fa.netlify.app/",
+          link: "https://poi-exp.netlify.app/",
           description:
             "This is an ongoing project to make a user interface for booking accommodation, activities, restaurants, and products. Also, an interactive map combined with a guide on Points of Interest and Experiences. The website is based on Vue.js and integrated with V3 Leisure OBX (Open Booking Exchange) Service",
           status: "Ongoing",
           tech: ["Vue"],
           images: ["poi-1.png"]
         },
+        // {
+        //   title: "Visit Nara Booking Page",
+        //   link: "https://book.visitnara.jp/",
+        //   description:
+        //     "Visit Nara Booking Page is a project of making the user interface for booking accommodation, activities, restaurants, and products of Visit Nara website. The website is based on React.js and integrated with V3 Leisure OBX (Open Booking Exchange) Service",
+        //   status: "Deployed",
+        //   tech: ["React"],
+        //   images: ["nara-1.png", "nara-2.png", "nara-3.png"]
+        // },
+        // {
+        //   title: "Ako Mag Booking Page",
+        //   link: "https://book.ako-mag.jp",
+        //   description:
+        //     "Ako Mag Booking Page is a project of making the user interface for booking accommodation, activities, restaurants, and products of Ako Mag. The website is based on React.js and integrated with V3 Leisure OBX (Open Booking Exchange) Service.",
+        //   status: "Deployed",
+        //   tech: ["React"],
+        //   images: ["ako-1.png", "ako-2.png", "ako-3.png"]
+        // },
+        // {
+        //   title: "FORMS Living",
+        //   link: "https://clever-zuccutto-493a9a.netlify.app/",
+        //   description:
+        //     "FORMS Living is a project of slicing design to HTML, CSS and Javascript.",
+        //   status: "Ongoing",
+        //   tech: ["HTML", "CSS", "jQuery"],
+        //   images: ["forms-1.png", "forms-2.png", "forms-3.png"]
+        // },
         {
-          title: "Visit Nara Booking Page",
-          link: "https://book.visitnara.jp/",
+          title: "UKMJagoWAn",
+          link: "https://ukmjagowan.id",
           description:
-            "Visit Nara Booking Page is a project of making the user interface for booking accommodation, activities, restaurants, and products of Visit Nara website. The website is based on React.js and integrated with V3 Leisure OBX (Open Booking Exchange) Service",
+            "UKMJagoWAn is a catalog for small businesses in Indonesia organised by ukmindonesia.id with partnership with WhatsApp. The website is a digital catalog that used to add more exposure to all small businessess selected by UKMJagoWAn.id, and it's running with Laravel Framework and jQuery.",
           status: "Deployed",
-          tech: ["React"],
-          images: ["nara-1.png", "nara-2.png", "nara-3.png"]
+          tech: ["Laravel", "jQuery"],
+          images: ["uj-1.png", "uj-2.png", "uj-3.png"]
         },
         {
-          title: "Ako Mag Booking Page",
-          link: "https://book.ako-mag.jp",
+          title: "Early Theory",
+          link: "https://earlytheory.com",
           description:
-            "Ako Mag Booking Page is a project of making the user interface for booking accommodation, activities, restaurants, and products of Ako Mag. The website is based on React.js and integrated with V3 Leisure OBX (Open Booking Exchange) Service.",
+            "Early Theory is an online service company that provides tarot services and also selling some of their stuff. This website has been developed in e-commerce type for tarot services. It took one month to finish this project, and I’m doing this project with one partner. My role for this project is as a front-end developer and also as UI/UX designer. For the back-end, we used Laravel. And for the javascript, we used jQuery.",
           status: "Deployed",
-          tech: ["React"],
-          images: ["ako-1.png", "ako-2.png", "ako-3.png"]
+          tech: ["Laravel", "jQuery"],
+          images: ["et1.jpg", "et2.jpg", "et3.jpg"]
         },
         {
-          title: "FORMS Living",
-          link: "https://clever-zuccutto-493a9a.netlify.app/",
+          title: "So-Klin",
+          link: "https://soklinlantai.com/",
           description:
-            "FORMS Living is a project of slicing design to HTML, CSS and Javascript.",
-          status: "Ongoing",
-          tech: ["HTML", "CSS", "jQuery"],
-          images: ["forms-1.png", "forms-2.png", "forms-3.png"]
+            "So Klin is a fragrance product for floors and clothes. This website has been developed for company profiles and catalog products from the company. But there are no transactions or selling on the website. It linked to another website which is e-commerces. I'm doing this project by myself within two months. Furthermore, my role for this project is a full-stack developer. This website used WordPress for the back-end and used jQuery for javascript.",
+          status: "Deployed",
+          tech: ["Wordpress", "jQuery"],
+          images: ["sk1.jpg", "sk2.jpg", "sk3.jpg"]
         },
         {
           title: "Panda of Borderlands",
@@ -155,42 +209,15 @@ export default {
           tech: ["HTML", "CSS"],
           images: ["stman-1.png", "stman-2.png", "stman-3.png"]
         },
-        {
-          title: "UKM JuWAra",
-          link: "https://ukmjuwara.id",
-          description:
-            "UKM JuWAra is a catalog for small businesses in Indonesia organised by ukmindonesia.id. The website is a digital catalog that used to add more exposure to all small businessess selected by UKM JuWAra, and it's running with Laravel Framework and jQuery.",
-          status: "Deployed",
-          tech: ["Laravel", "jQuery"],
-          images: ["uj-1.jpg", "uj-2.jpg", "uj-3.jpg"]
-        },
-        {
-          title: "Early Theory",
-          link: "https://earlytheory.com",
-          description:
-            "Early Theory is an online service company that provides tarot services and also selling some of their stuff. This website has been developed in e-commerce type for tarot services. It took one month to finish this project, and I’m doing this project with one partner. My role for this project is as a front-end developer and also as UI/UX designer. For the back-end, we used Laravel. And for the javascript, we used jQuery.",
-          status: "Deployed",
-          tech: ["Laravel", "jQuery"],
-          images: ["et1.jpg", "et2.jpg", "et3.jpg"]
-        },
-        {
-          title: "So-Klin",
-          link: "https://soklinlantai.com/",
-          description:
-            "So Klin is a fragrance product for floors and clothes. This website has been developed for company profiles and catalog products from the company. But there are no transactions or selling on the website. It linked to another website which is e-commerces. I'm doing this project by myself within two months. Furthermore, my role for this project is a full-stack developer. This website used WordPress for the back-end and used jQuery for javascript.",
-          status: "Deployed",
-          tech: ["Wordpress", "jQuery"],
-          images: ["sk1.jpg", "sk2.jpg", "sk3.jpg"]
-        },
-        {
-          title: "Burn Support Group",
-          link: "http://burnsupport.id",
-          description:
-            "Burn Support Group is a community forum for burn survivors through education and training aimed at conducting social empowerment for burn survivors. This website has been developed for company profiles and campaigns from the company. There is a register page for candidates. I'm doing this project by myself within one month. Hence, my role for this project is a full-stack developer. This website used Laravel for the back-end and used jQuery for javascript. ",
-          status: "Deployed",
-          tech: ["Laravel", "jQuery"],
-          images: ["bs1.jpg", "bs2.jpg", "bs3.jpg"]
-        },
+        // {
+        //   title: "Burn Support Group",
+        //   link: "http://burnsupport.id",
+        //   description:
+        //     "Burn Support Group is a community forum for burn survivors through education and training aimed at conducting social empowerment for burn survivors. This website has been developed for company profiles and campaigns from the company. There is a register page for candidates. I'm doing this project by myself within one month. Hence, my role for this project is a full-stack developer. This website used Laravel for the back-end and used jQuery for javascript. ",
+        //   status: "Deployed",
+        //   tech: ["Laravel", "jQuery"],
+        //   images: ["bs1.jpg", "bs2.jpg", "bs3.jpg"]
+        // },
         {
           title: "Senimart",
           description:
