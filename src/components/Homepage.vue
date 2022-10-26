@@ -53,11 +53,16 @@ export default {
 }
 .blob {
   position: absolute;
+  opacity: 0.6;
 }
 
 .cta-text h1 {
   font-weight: 600;
   padding-top: 60px;
+}
+
+.cta-text h5 {
+  line-height: 1.4;
 }
 
 .one {
