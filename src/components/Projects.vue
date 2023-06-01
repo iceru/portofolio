@@ -9,7 +9,7 @@
                 <h3>{{ index + 1 }}. {{ project.title }}</h3>
               </a>
             </div>
-            <div class="d-flex justify-content-center">
+            <div class="d-flex justify-content-center flex-wrap">
               <p v-show="project.tech.includes('Laravel')" class="laravel logo">
                 <img src="@/assets/laravel.png" alt="" /> Laravel
               </p>
@@ -31,6 +31,12 @@
               </p>
               <p v-show="project.tech.includes('jQuery')" class="logo">
                 <img src="@/assets/jquery.png" alt="" />
+              </p>
+              <p v-show="project.tech.includes('Alpine')" class="logo">
+                <img src="@/assets/alpine.png" alt="" />
+              </p>
+              <p v-show="project.tech.includes('Tailwind')" class="logo">
+                <img src="@/assets/tailwind.png" alt="" />
               </p>
             </div>
           </div>
@@ -78,6 +84,15 @@ export default {
   data: function() {
     return {
       projects: [
+        {
+          title: "Spa Factory Bali",
+          link: "https://spafactorybali.biz/",
+          description:
+            "Spa Factory Bali is a renowned, professional contract manufacturer in Bali. This website is based on Laravel, Tailwind and Alpine.js.",
+          status: "Deployed",
+          tech: ["Laravel", "Alpine", "Tailwind"],
+          images: ["sfb-1.png", "sfb-2.png", "sfb-3.png"]
+        },
         {
           title: "Newville",
           link: "https://newville.id/",

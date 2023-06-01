@@ -10,7 +10,7 @@
           <h5 class="pt-2">
             I’m a Passionate Front-End Web Developer with 3 years of experience
             with building all aspects of user interface and user experience.
-            Specialize in HTML, CSS, Vue.Js, React.js, Wordpress and Laravel to
+            Specialize in HTML, CSS, Vue.Js, React.js, Laravel and Wordpress to
             build various types of websites.
           </h5>
           <!-- <h5 class="pt-2">I’m seeking for a new opportunity right now.</h5> -->
